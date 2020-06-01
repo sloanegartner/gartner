@@ -46,7 +46,22 @@ p {
   width: 50%;
 }
 
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
 
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+footer {
+  margin-top: 10%;
+}
 
 </style>
 </head>
@@ -78,22 +93,23 @@ p {
     </div>
   </nav>
 
-<main>
-<section>
-    <img src="images/sloane1.jpg" alt="cover" class="center" style="width: 95%;">
-</section>
+
 
 <div class="container">
-  <div class="row">
-    <section class="col-xs-12, col-sm-12, col-md-12">
-      <h1 class="card-title">About</h1>
-          <p class="card-text">Hi, My name is Sloane Gartner. I am currently a student at James Madison Univeristy with a B.A in Interactive Design and Psychology. While applying for Madison's <a href="https://www.jmu.edu/smad/" target="_blank" style="text-decoration: underline;">School of Media Arts and Design (SMAD),</a> I had four concentrations to choose from, Creative Advertisement, Video, Journalism, and Interactive Design. Interactive design was my first concentration choice because I feel that the skills needed for designing interactive digital products are strong attributes to have in a world where the connection between users and products are growing. Also, I felt that having the Psychology background paired well, considering if I plan to make products for people I should know people. Through my interactive design classes, my interest grew in user experience and in learning how to design and integrate media elements. </p> 
-
-          <p>Aside from acedemics, I am President of the Madison <a href="https://jamesmadisonclubfieldhockey.weebly.com" target="_blank" style="text-decoration: underline;">Club Field Hockey team.</a> I work with other teams to schedule games and tournaments as well as traveling legistics. I hold meetings and create deadlines to ensure the executive board runs smoothly and effectivly. Also, since I have experience from being the previous Treasurer, I work on our yearly budget and organize the finances with the current tresurer. </p> 
-
-          <p>When I'm not in class or on the field, I work at Madison's <a href="https://info.jmu.edu/tad/" target="_blank" style="text-decoration: underline;">Technology and Design (TAD)</a> as a staff photographer. TAD serves to complete creative projects for the departments of JMU University Unions. I take photos of events around campus, concerts, student run events, ceremonies, etc. I work with real-world clients and with deadlines that need to be met. Working at TAD has been one of my greatest experiences at Madison because it has given me the hands-on experience with project management that I need in order to be prepared for employment after graduation. I feel that the experiences I've had, have tought me to be a hard-worker, problem-solver, and dependable individual.  
-          </p>
+  <div class="row" style="margin-top: 153px;">
+    <section class="col-xs-12, col-sm-12, col-md-6">
+      <a href="photos.html"><img src="images/newcover.jpg" data-lightbox="mygallery" class="img-thumbnail" alt="photo" style="border-color: gray; border-radius: 2%; border-width: 3px;"></a>
     </section>
+
+    <section class="col-xs-12, col-sm-12, col-md-6" >
+      <h1 class="card-title">About</h1>
+          <p class="card-text">My name is Sloane Gartner. I am currently a student at James Madison Univeristy with a B.A in Interactive Design and Psychology. While applying for Madison's <a href="https://www.jmu.edu/smad/" target="_blank" style="text-decoration: underline;">School of Media Arts and Design (SMAD),</a> I had four concentrations to choose from, Creative Advertisement, Video, Journalism, and Interactive Design. Interactive design was my first concentration choice because I feel that the skills needed for designing interactive digital products are strong attributes to have in a world where the connection between users and products are growing. Also, I felt that having the Psychology background paired well, considering if I plan to make products for people I should know people. Through my interactive design classes, my interest grew in user experience and in learning how to design and integrate media elements. </p> 
+            <a href="about.html"><div class="btn btn-outline-dark btn-lg" role="button">More</div></a>
+  </section>
+
+
+
+</main>
 
 <footer>
   <div class="container-fluid">
@@ -120,7 +136,6 @@ p {
 </footer>
 </div>
 </div>
-</main>
 </body>
 
     <script src="js/jquery.min.js"></script>
