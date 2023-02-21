@@ -1,124 +1,311 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="Resume Page" content="Resume page, resume, skills, classes">
-  <meta name="Sloane Gartner" content="Sloane Gartner, Portfolio Site, about, resume, work, contact">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>Resume // Gartner</title>
+<meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+<title>Resume // Gartner</title>
 
-  <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" media="screen">
-  <link href="css/custom.css" rel="stylesheet" type="text/css" media="screen">
-  <link rel="shortcut icon" type="images/png" href="images/logo.png">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;600&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto+Slab:wght@400;500;600&display=swap" rel="stylesheet">
-
-<style>
-
-.container-fluid {
-  padding-right: 80px;
-  padding-left: 80px;
-}
-
-h1 {
-  font-size: 3em;
-}
-
-.img-thumbnail {
-  text-align: center;
-}
-
-h6 {
-  text-align: center;
-  margin-top: 85px;
-}
-
-section {
-  margin-bottom: -11px;
-}
-
-</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto+Slab:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet"  href="css/style3.css">
 </head>
 
 <body>
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-sm navbar-expand-lg fixed-top" id="mainNav">
-      <div class="container-fluid">
-        <a href="index.html" style="font-size: 1.5em">Sloane Gartner</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="navbar-nav" id="navbarResponsive">
-          <ul>
-          <li>
-          <a class="nav-item nav-link" href="about.html">About</a>
-          </li>
-          <li>
-          <a class="nav-item nav-link" href="resume.html">Resume</a>
-          </li>
-          <li>
-            <div class="dropdown">
-              <button class="dropbtn">Work</button>
-              <div class="dropdown-content">
-                <a href="uxui.html" style="font-weight: normal;">UX/UI Projects</a>
-                <a href="design.html" style="font-weight: normal;">Website Designs</a>
-                <a href="graphic.html" style="font-weight: normal;">Graphic/Visual Designs</a>
-                <a href="photos.html" style="font-weight: normal;">Photography</a>
-              </div>
-            </div>
-          </li>
-          <li>
-          <a class="nav-item nav-link" href="contact.html">Contact</a>
-          </li> 
-        </ul>
-      </div>
+<header>
+
+<!-- Navigation -->
+<a href="index.html" class="logo">Sloane Gartner</a>
+	<div class="group">
+		<ul class="navigation">
+			<li><a href="about.html">About</a></li>
+			<li><a href="resume.html">Resume</a></li>
+    <div class="dropdown">
+      <button onclick="myFunction()" class="dropbtn">Designs</button>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="clients.html">Client Work</a>
+          <a href="personal.html">Personal Projects</a>
+          <a href="professional.html">Professional Work</a>
     </div>
-  </nav>
-<main>
-  
-  <div class="container-fluid" style="padding-left: 180px; padding-right: 200px;">
-<div class="row" style="margin-top: 165px;">
-     <section class="col-xs-12, col-sm-12, col-md-6 nopadding">
-      <h1><span class="half_background">Skills</span></h1>
-      <img src="images/icloud1.png" class="img-thumbnail" alt="photo" style="border-color: white; width:130px; height:130px;">
-      <img src="images/camera1.png" class="img-thumbnail" alt="photo" style="border-color: white; width:130px; height:130px;">
-      <img src="images/wireframe1.png" class="img-thumbnail" alt="photo" style="border-color: white; width:130px; height:130px; padding-left: 20px;">
-      <br>
-      <img src="images/html11.png" class="img-thumbnail" alt="photo" style="border-color: white; width:130px; height:130px;">
-      <img src="images/css11.png" class="img-thumbnail" alt="photo" style="border-color: white; width:130px; height:130px;">
-      <img src="images/uxui1.png" class="img-thumbnail" alt="photo" style="border-color: white; width:199px; height:130px; padding-right: 40px;">
-
-      <h1><span class="half_background">Check These O</span>ut</h1>
-      <a href="https://www.instagram.com/vsg.photography/" target="_blank">Photography Instagram</a> <br>
-      <a href="https://www.flickr.com/photos/161006758@N03/albums" target="_blank">Work Photography Portfolio</a> <br>
-      <a href="https://www.flickr.com/photos/161006758@N03/albums" target="_blank">Personal Portfolio</a> <br>
-      <a href=https://www.youtube.com/watch?v=mIS51c9oGsM target="_blank">Documentary 1: Bats in Arlington</a><br>
-      <a href=https://www.youtube.com/watch?v=WH5a-plLWK8 target="_blank">Documentary 2: The Spirit of Nauck</a><br>
-      <a href="images/virginia_gartner_resume3.pdf" target="_blank">Print Resume</a>
-    </section>
-
-    <section class="col-xs-12, col-sm-12, col-md-6 nopadding">
-      <a href="images/virginia_gartner_resume3.pdf" data-lightbox="mygallery" data-title="Resume // Gartner"><img src="images/virginia_gartner_resume3.pdf" class="img-thumbnail" alt="photo" 
-        style="border-color: white; width: 500px; height: 600px;"></a>
-        <center><a href="images/resume3.png" target="_blank"><button type="button" class="btn btn-outline-dark">
-          <svg width="1.5em" height="1.7em" viewBox="0 0 16 16" class="bi bi-arrows-fullscreen" fill="#7A7582" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" d="M5.828 10.172a.5.5 0 0 0-.707 0l-4.096 4.096V11.5a.5.5 0 0 0-1 0v3.975a.5.5 0 0 0 .5.5H4.5a.5.5 0 0 0 0-1H1.732l4.096-4.096a.5.5 0 0 0 0-.707zm4.344 0a.5.5 0 0 1 .707 0l4.096 4.096V11.5a.5.5 0 1 1 1 0v3.975a.5.5 0 0 1-.5.5H11.5a.5.5 0 0 1 0-1h2.768l-4.096-4.096a.5.5 0 0 1 0-.707zm0-4.344a.5.5 0 0 0 .707 0l4.096-4.096V4.5a.5.5 0 1 0 1 0V.525a.5.5 0 0 0-.5-.5H11.5a.5.5 0 0 0 0 1h2.768l-4.096 4.096a.5.5 0 0 0 0 .707zm-4.344 0a.5.5 0 0 1-.707 0L1.025 1.732V4.5a.5.5 0 0 1-1 0V.525a.5.5 0 0 1 .5-.5H4.5a.5.5 0 0 1 0 1H1.732l4.096 4.096a.5.5 0 0 1 0 .707z"/></svg></button></a>
-    </section>
   </div>
+			<li><a href="photography.html">Photography</a></li>
+			<li><a href="contact.html">Contact</a></li>
+</ul>
 </div>
-</main>
+</header>
+
+<!-- Left Content -->
+<div class="wrapper">
+	<section class="left">
+	<h1>You can also view my resume <a href="https://sloanegartner.github.io/professional-resume/resume.html" target="_blank">here</a> on my github.</h1>
+		<div class="about skills">
+			<h2 class="title2">Professional Skills</h2>
+			<div class="box">
+			<h4>HTML/CSS</h4>
+			<div class="percent">
+			<div style="width: 90%;">
+			</div>
+		</div>
+	</div>
+
+			<div class="box">
+			<h4>UX/UI</h4>
+			<div class="percent">
+			<div style="width: 90%;">
+			</div>
+		</div>
+	</div>
+
+			<div class="box">
+			<h4>Figma</h4>
+			<div class="percent">
+			<div style="width: 85%;">
+			</div>
+		</div>
+	</div>
+
+			<div class="box">
+			<h4>Adobe Creative Cloud</h4>
+			<div class="percent">
+			<div style="width: 95%;">
+			</div>
+		</div>
+	</div>
+
+	<div class="box">
+			<h4>SEO</h4>
+			<div class="percent">
+			<div style="width: 78%;">
+			</div>
+		</div>
+	</div>
+
+			<div class="box">
+			<h4>Bootstrap</h4>
+			<div class="percent">
+			<div style="width: 60%;">
+			</div>
+		</div>
+	</div>
+
+			<div class="box">
+			<h4>Github</h4>
+			<div class="percent">
+			<div style="width: 60%;">
+			</div>
+		</div>
+	</div>
+
+			<div class="box">
+			<h4>Photography</h4>
+			<div class="percent">
+			<div style="width: 90%;">
+			</div>
+		</div>
+	</div>
+
+			<div class="box">
+			<h4>Wireframing & Prototyping</h4>
+			<div class="percent">
+			<div style="width: 87%;">
+			</div>
+		</div>
+	</div>
+
+			<div class="box">
+			<h4>Visual Design</h4>
+			<div class="percent">
+			<div style="width: 90%;">
+			</div>
+		</div>
+	</div>
+
+			<div class="box">
+			<h4>Adobe XD</h4>
+			<div class="percent">
+			<div style="width: 80%;">
+			</div>
+		</div>
+	</div>
+
+		<div class="contactInfo certificate">
+				<h3 class="title">Certificates</h3>
+				<ul>
+					<li>
+						<h5>2022</h5>
+						<h4>Google UX Design Certificate</h4>
+						<h4>Coursera</h4>
+					</li>
+					<li>
+						<h5>2022</h5>
+						<h4>Google Data Analytics Certificate</h4>
+						<h4>Coursera</h4>
+					</li>
+				</ul>
+		</div>
+
+<div class="contactInfo activities">
+				<h3 class="title">Activities</h3>
+				<ul>
+					<li>
+						<h5>2016 - Present</h5>
+						<h4>The Art League & Gallery at the Torpedo Factory</h4>
+					</li>
+					<li>
+						<h5>2016 - Present</h5>
+						<h4>Arlington Community Access Corporation</h4>
+					</li>
+					<li>
+						<h5>2021 - 2022</h5>
+						<h4>Perfect Performance Field Hockey Coach</h4>
+					</li>
+					<li>
+						<h5>2017 - 2021</h5>
+						<h4>James Madison University Club Field Hockey</h4>
+						<h4>President/Treasure/Player</h4>
+					</li>
+					<li>
+						<h5>2019</h5>
+						<h4>Professional Bartending School</h4>
+						<h4>Techniques in Alcohol Management (TAM) Certified</h4>
+					</li>
+				</ul>
+			</div>
+		</div>
 
 
 
-  <footer>
-  <section>
+
+</section>
+
+
+<!-- Right Content -->
+	<section class="right">
+		<div class="about">
+			<h2 class="title2">Experience</h2>
+			<div class="box">
+				<div class="year-company">
+					<h5>2021 - Present</h5>
+					<h5>US News & World Report</h5>
+					<h5>Georgetown DC</h5>
+				</div>
+				<div class="text">
+					<h4>Research Analyst</h4>
+					<p>Working within 360 Reviews, I perform SEO research and analyze and collect data on products for upcoming ratings.</p>
+					
+					<p>I conduct user research to uncover what products the users are more likely to purchase.</p>
+					
+					<p>I aggregate data to help summarize data from different, disparate and multiple sources.</p>
+					
+					<p>I create and update multiple meta-analysis for various different research projects.</p>
+				</div>
+			</div>
+
+				<div class="box">
+				<div class="year-company">
+					<h5>2018 - Present</h5>
+					<h5>Freelance</h5>
+					<h5>Arlington VA</h5>
+				</div>
+				<div class="text">
+					<h4>Web Designer & Photographer</h4>
+					<p>I have worked with clients on their professional websites. I have planned, created and coded their sites and web pages.</p>
+
+					<p>I create designs, logos and layouts of the websites.</p>
+
+					<p>I make the sites SEO-friendly and work within the metadata and meta-descriptions.</p>
+
+					<p>I teach photography one-on-one (techniques, compositions, equipment, editing and social posting).</p>
+
+					<p>I photograph parties, formals and other social events.</p>
+				</div>
+			</div>
+
+
+						<div class="box">
+				<div class="year-company">
+					<h5>2017 - 2021</h5>
+					<h5>Technology & Design</h5>
+					<h5>Harrisonburg VA</h5>
+				</div>
+				<div class="text">
+					<h4>Lead Photographer</h4>
+					<p>I was lead photographer on the creative projects team for JMUs media shop. I set and lead staff meetings, interacted with clients and provided visuals for the Universities websites.</p>
+
+					<p>As a member of the team, I shot, selected, edited and retouched photos for brochures, magazines, posters and social media that promoted the universities activities to the campus community and alumni.</p>
+
+					<p>We used rapid prototyping and agile methods to provide quick turnarounds that were always customized to the clients needs, both print and social.</p>
+				</div>
+			</div>
+
+
+						<div class="box">
+				<div class="year-company">
+					<h5>2019</h5>
+					<h5>Foroige</h5>
+					<h5>Galway Ireland</h5>
+				</div>
+				<div class="text">
+					<h4>Web Designer</h4>
+					<p>I was the member of the web team for JMU - Foroige international educational partnership.</p>
+
+					<p>I was responsible for the front-end development of a public service website to increase community awareness about reducing food waste in Galway.</p>
+
+					<p>I determined the layout, theme and selected and edited multimedia content (video/photo/text).</p>
+
+					<p>I launched the final site at 2019.jmuireland.com</p>
+				</div>
+			</div>
+
+	<div class="contactInfo education">
+			<h3 class="title">Education</h3>
+				<ul>
+					<li>
+						<h5>2017 - 2021</h5>
+						<h4>B.A. in Interactive Design & Psychology</h4>
+						<h4>James Madison University</h4>
+						<h1>Link to Dipoma <a href="https://sloanegartner.github.io/gartner/images/diploma.png" target="_blank">here</a></h1>
+					</li>
+				</ul>
+			</div>
+
+<div class="about interests">
+	<h2 class="title2">Interests</h2>
+	<ul>
+		<li>Field Hockey</li>
+		<li>Photography</li>
+		<li>Running</li>
+	</ul>
+
+</div>
+</div>
+</section>
+</div>
+
+<!-- Dropdown Menu -->
+<script>
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+
+
+<!-- Footer -->
+<footer>
     <h6>Designed and Created by Sloane Gartner</h6>
-  </section>
 </footer>
 
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/jquery.easing.min.js"></script>
-    <script src="js/scrolling-nav.js"></script>
+</body>
 </html>
