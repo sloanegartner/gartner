@@ -1,106 +1,631 @@
 <!DOCTYPE html>
-<html>
-<head>
-<meta name="viewpoint" content="width=device-width, initial-scale=1.0">
-<title>Virginia Sloane Gartner</title>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
-<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;600&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto+Slab:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet"  href="css/style1.css">
-</head>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-<body>
-<header>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-<!-- Navigation -->
-<a href="index.html" class="logo">Sloane Gartner</a>
-	<div class="group">
-		<ul class="navigation">
-			<li><a href="about.html">About</a></li>
-			<li><a href="resume.html">Resume</a></li>
-    <div class="dropdown">
-      <button onclick="myFunction()" class="dropbtn">Designs</button>
-        <div id="myDropdown" class="dropdown-content">
-          <a href="clients.html">Client Work</a>
-          <a href="personal.html">Personal Projects</a>
-          <a href="professional.html">Professional Work</a>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/et-line-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Other Links -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto+Slab:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/et-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--https://fontawesome.com/v4/icons/-->
+
+    <!-- Fadeing CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <title>Virginia Sloane Gartner</title>
+  </head>
+  <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="75">
+
+<!-- NavBar -->
+<nav class="navbar navbar-expand-lg fixed-top navbar-dark" id="navbar">
+    <div class="container">
+    <a class="navbar-brand" href="index.html">Sloane Gartner</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#hero">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#designs">Designs</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#photography">Photography</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#resume">Resume</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+      </ul>
     </div>
   </div>
-			<li><a href="photography.html">Photography</a></li>
-			<li><a href="contact.html">Contact</a></li>
-</ul>
+</nav>
+
+<!-- HERO IMAGE/LANDING PAGE -->
+  <section id="hero" class="text-white text-center overlay" data-jarallax data-speed="0.5" class="jarallax">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h1 class="display-3 my-4">Sloane Gartner</h1>
+          <p>
+            Visual Designer // Photographer // Graphic Designer // Research Analyst // Web Designer</p>
+
+            <a href="https://www.instagram.com/vsg.photography/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            
+            <span class=contactIcons><a href="https://www.linkedin.com/in/sloane-gartner-14b690156" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+            
+            <a href="https://sloanegartner.github.io/professional-resume/resume.html" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+
+            <a href="https://flickr.com/search/?user_id=19363422%40N02&view_all=1&text=Sloane%20Gartner" target="_blank"><i class="fa fa-flickr" aria-hidden="true"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+    <!-- ABOUT -->
+    <div id="about" class="section-padding divider">
+        <div class="container">
+            <div class="row">
+                <div class="col-12" data-aos="fade-up">
+                    <div class="intro-section text-center mb-5">
+                        <h1>Hey There!</h1>
+                        <p class="mx-auto">There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration in some form by injected humour</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row gy-4">
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service border-hover p-4 shadow rounded-5">
+                        <div class="icon rounded-4"><i class="fa fa-graduation-cap" aria-hidden="true"></i></div>
+                        <h5 class="mt-4 fw-bold">B.A. Interactive Design & Psychology</h5>
+                        <p class="mb-0">I graduated from James Madison University in 2021. I studied Interactive Design at JMU's School of Media Arts and Design (SMAD) school. 
+                        <a href="https://sloanegartner.github.io/gartner/images/diploma.png" target="_blank" class="d-block mt-2">Diploma</a>
+                        <a href="https://www.jmu.edu/smad/about-smad/mission-vision.shtml" target="_blank" class="d-block mt-2">More About SMAD</a></p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service border-hover p-4 shadow rounded-5">
+                        <div class="icon rounded-4"><i class="fa fa-certificate" aria-hidden="true"></i></div>
+                        <h5 class="mt-4 fw-bold">Google UX Design Certificate</h5>
+                        <p class="mb-0">Within this certificate I gained skills in website wireframe, UX/UI design, user research, graphic design, Adobe XD, InVision, and creating high/low-fidelity prototypes.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service border-hover p-4 shadow rounded-5">
+                        <div class="icon rounded-4"><i class="fa fa-certificate" aria-hidden="true"></i></div>
+                        <h5 class="mt-4 fw-bold">Google Data Analytics Certificate</h5>
+                        <p class="mb-0">Within this certificate I gained skills in SQL, data analytics, problem solving, data collection, sharing data through visualizations, and presenting data to stallholders.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="400">
+                    <div class="service border-hover p-4 shadow rounded-5">
+                        <div class="icon rounded-4"><i class="fa fa-camera-retro" aria-hidden="true"></i></div>
+                        <h5 class="mt-4 fw-bold">Photography</h5>
+                        <p class="mb-0">I have been taking photos for over 8 years. I worked in a media shop as lead photographer for 4 years and have been freelancing for 5 years. Check out some of my photography below.
+                            <a href="photos.html" target="_blank" class="d-block mt-2">View Gallery</a></p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="500">
+                    <div class="service border-hover p-4 shadow rounded-5">
+                        <div class="icon rounded-4"><i class="fa fa-female" aria-hidden="true"></i></i></div>
+                        <h5 class="mt-4 fw-bold">Hobbies</h5>
+                        <p class="mb-0">Besides taking photos, I love running! I compete in monthly races and ran my first half-marathon in 2021. I'm hoping to run in another half-marathon soon, and mustering up the courage to run a marathon.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="600">
+                    <div class="service border-hover p-4 shadow rounded-5">
+                        <div class="icon rounded-4"><i class="fa fa-paw" aria-hidden="true"></i></div>
+                        <h5 class="mt-4 fw-bold">Chihuahuas</h5>
+                        <p class="mb-0">I have 4 chihuahua's, Cooper, Juju, and Juju's puppies Ouija Warning and Voodoo. Juju is a retired Grand Champion Bronze show dog, and we're hoping her puppies follow in suit.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- ACTIVITIES SECTION -->
+<section id="events" class="overlay text-white text-center" data-jarallax data-speed="0.5" class="jarallax">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3 col-sm-6">
+        <div class="counter">
+            <h2>The Art League & Gallery at the Torpedo Factory</h2>
+            <div class="divider"></div>
+            <h6>2016 - Present</h6>
+          </div>
+        </div>
+
+              <div class="col-lg-3 col-sm-6">
+        <div class="counter">
+            <h2>Arlington Community Access Corporation</h2>
+            <div class="divider"></div>
+            <h6>2016 - Present</h6>
+          </div>
+        </div>
+              <div class="col-lg-3 col-sm-6">
+        <div class="counter">
+            <h2>Perfect Performance Field Hockey Coach</h2>
+            <div class="divider"></div>
+            <h6>2021 - 2022</h6>
+          </div>
+        </div>
+              <div class="col-lg-3 col-sm-6">
+        <div class="counter">
+            <h2>Professional Bartending School</h2>
+            <div class="divider"></div>
+            <h6>2019</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+   <!-- Designs-->
+    <div id="designs" class="section-padding divider">
+        <div class="container">
+            <div class="row">
+                <div class="col-12" data-aos="fade-up">
+                    <div class="intro-section text-center mb-5">
+                        <h1>My Designs</h1>
+                        <p class="mx-auto">I currently freelance as a web designer and below are the projects i've worked on. To gain and strengthen new skills I also work on personal projects.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row gy-4">
+                <div class="col-md-6 col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="p-4 border-hover shadow rounded-5">
+                        <div class="text-center"><img src="images/spline.png" class="img-fluid rounded-3 mb-3" alt=""></div>
+                        <span class="badge">3D Design Tool</span>
+                        <a href="https://my.spline.design/untitled-fd224f6f3a7b6024506e66b278ac7fa3/" target="_blank" class="d-block mt-2"><h5>Spline</h5></a>
+                        <p>
+                        Spline is a 3D design tool I am learning to gain experience in interactive 3D designs. Using the tool, I created a 3D toggle that moves and changes color. I am hoping to add more projects using spline, for example websits and mobile interactions.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="p-4 border-hover shadow rounded-5">
+                        <div class="text-center"><img src="images/sherpa3.png" class="img-fluid rounded-5 mb-3" alt=""></div>
+                        <span class="badge">Figma: High-Fidelity Prototype</span>
+                        <a href="https://www.figma.com/file/Hr9vn5jMiio4Hq1aieWaUO/SHERPA?node-id=0%3A1&t=JMlpTOvPoolMRDJz-1" target="_blank" class="d-block mt-2"><h5>SHERPA</h5></a>
+                        <p>Using the user-centered design (UCD) process, I created SHERPA, a financial app. For this mobile interaction, I created personas, scenarios, storyboards, prototypes, and conducted interviews and usability tests. SHERPA was created in Figma and is currently, a high-fidelity prototype.  
+                        <a href="https://sloanegartner.github.io/gartner/sherpa1.pdf" target="_blank" class="d-block mt-2">SHERPAs UCD</a></p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="p-4 border-hover shadow rounded-5">
+                        <div class="text-center"><img src="images/alehouse2.png" class="img-fluid rounded-5 mb-3" alt=""></div>
+                        <span class="badge">Bootstrap & JavaScript</span>
+                        <a href="https://sloanegartner.github.io/alehouse/index.html" target="_blank" class="d-block mt-2"><h5>The AleHouse</h5></a>
+                        <p>The AleHouse is a fictional brewery website that was created using HTML, CSS, Bootstrap 5, and JavaScript. The website is a responsive, mobile-first site that displays my skills in Bootstrap, JavaScript, and implementing interactive feature such as using carousels and jarallax. The photography and logo are my designs as well. I used Adobe Photoshop and Illustrator.</p>
+                    </div>
+                </div>
+                 <div class="col-md-6 col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="p-4 border-hover shadow rounded-5">
+                        <div class="text-center"><img src="images/barme.png" class="img-fluid rounded-5 mb-3" alt=""></div>
+                        <span class="badge">Mobile App Design</span>
+                        <a href="https://xd.adobe.com/view/c23f688c-d4f3-4153-76a8-8efdeb05b297-b40e/" target="_blank" class="d-block mt-2"><h5>BarMe</h5></a>
+                        <p>BarMe is currently being worked on. BarMe is another app that's being created in Adobe XD. The app is a social app that serves as a guide for those looking for foods and drinks.</p> 
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="p-4 border-hover shadow rounded-5">
+                       <div class="text-center"><img src="images/cmfg.png" class="img-fluid rounded-5 mb-3" alt=""></div>
+                        <span class="badge">Web Design</span>
+                        <a href="https://www.callmefromthegrave.com/" target="_blank" class="d-block mt-2"><h5>Call Me From the Grave</h5></a>
+                        <p>This is a website designed for a musicians musical about Robert Johnson. I planned, created, and coded my clients website and web pages using SquareSpace. I combined text with sounds, pictures, graphics and video clips. I was responsible for creating the design, layout, and imagery of the website and web pages.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="p-4 border-hover shadow rounded-5">
+                        <div class="text-center"><img src="images/mimosa.png" class="img-fluid rounded-5 mb-3" alt=""></div>
+                        <span class="badge">SEO & Content Management</span>
+                        <a href="#" class="d-block mt-2"><h5>Mimosa</h5></a>
+                        <p>Mimosa was a promotional website created for a musical in 2021. I was responsible for redesigning the entire website to increase website traffic. I worked on creating keyword analysis, mood boards, website mock-ups, and researching ways to improve SEO rankings. I worked with SquareSpace on designing a more user-friendly and SEO-friendly website.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6" data-aos="fade-up" data-aos-delay="400">
+                    <div class="p-4 border-hover shadow rounded-5">
+                        <div class="text-center"><img src="images/cr1.png" class="img-fluid rounded-5 mb-3" alt=""></div>
+                        <span class="badge">Visual Branding</span>
+                        <a href="https://www.charlieromano.com/" target="_blank" class="d-block mt-2"><h5>Music Lyrics Soul</h5></a>
+                        <p>This website was a professional site created for displaying the clients music and services. I designed the logo as well as worked with SquareSpace's features on the design and layout of the website. Through the process I learned about SquareSpace and how to work with a client to ensure that the site met all the needs.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="p-4 border-hover shadow rounded-5">
+                        <div class="text-center"><img src="images/beatha1.png" class="img-fluid rounded-5 mb-3" alt=""></div>
+                        <span class="badge">WordPress</span>
+                        <a href="http://2019.jmuireland.com/" target="_blank" class="d-block mt-2"><h5>Beatha Galway</h5></a>
+                        <p>While in Galway Ireland, I partnered with Foroige, a nonprofit youth development organization to create a website on food waste. As part of the web team, I was to examine the social and cultural context of Galway and create a user friendly site that effectively and accurately displayed the information gathered. Using WordPress, I was able to create a five page web site as well as work on the design and layout to make the site interactive.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- Photography -->
+<div id="photography" class="section-padding divider">
+    <div class="row">
+        <div class="col-12" data-aos="fade-up">
+            <div class="intro-section text-center mb-5">
+            <h1>My Photography</h1>
+            <p class="mx-auto">I have been taking photos for over 8 years. While in school, I worked as a lead photographer while also freelancing on the side. I am currently freelancing and finding any excuse to bring my camera.
+
+                <a href="https://flickr.com/search/?user_id=19363422%40N02&view_all=1&text=Sloane%20Gartner" target="_blank" class="d-block mt-2">Flickr</a>
+
+                <a href="https://www.instagram.com/vsg.photography/" target="_blank" class="d-block mt-2">Photography Instagram</a></p>
+            </div>
+        </div>
+    </div>
+
+  <section id="photos" class="overlay text-white text-center" data-jarallax data-speed="0.5" class="jarallax">
+    <div class="owl-carousel owl-theme reviews-sider">
+
+    <div class="review">
+      <div class="quote"></div>
+        <div class="text-center"><img src="images/photo1.jpg" class="img-fluid rounded-3 mb-3" alt=""></div>
+    </div>
+
+    <div class="review">
+      <div class="quote"></div>
+      <div class="text-center"><img src="images/photo2.jpg" class="img-fluid rounded-3 mb-3" alt=""></div>
+    </div>
+
+    <div class="review">
+      <div class="quote"></div>
+      <div class="text-center"><img src="images/photo3.jpg" class="img-fluid rounded-3 mb-3" alt=""></div>
+    </div>
+
+    <div class="review">
+      <div class="quote"></div>
+      <div class="text-center"><img src="images/photo4.jpg" class="img-fluid rounded-3 mb-3" alt=""></div>
+    </div>
+
+    <div class="review">
+      <div class="quote"></div>
+      <div class="text-center"><img src="images/photo5.jpg" class="img-fluid rounded-3 mb-3" alt=""></div>
+    </div>
+
+    <div class="review">
+      <div class="quote"></div>
+      <div class="text-center"><img src="images/photo6.png" class="img-fluid rounded-3 mb-3" alt=""></div>
+    </div>
 </div>
-</header>
 
-<!-- Content -->
-<div class="wrapper">
-	<section class="left">
-		 <img src="images/cover.jpg" class="img-thumbnail" alt="photo">
-	</section>
-
-
-	<section class="right">
-			<h2>Areas of Interests</h2>
-		<div class="interests">
-			<h3><span class="half_background">UX/UI</span></h3>
-			<h3><span class="half_background">Web Design</span></h3>
-			<h3><span class="half_background">Visual Design</span></h3>
-			<h3><span class="half_background">Photography</span></h3>
-		</div>
-	<div class="text">
-          <p>Hey there! My name is Sloane and I am currently looking to gain professional experience in UX/UI, visual, and product design. I graduated with a B.A. in interactive design and psychology and am currently working as a research analyst at US News & World Report and I am a freelance web designer & photographer. I would describe myself as a visual designer. I've been a photographer for 8 years and I've been a web designer for 4 years. I've always enjoyed the UI aspect of web design and find it to be the more important half of UX/UI design. I'm excited for the opportunities ahead and would love to connect on opportunities.</p> 
-          <br>
-          <p>I have a passion and interest in UX/UI design, web design, visual design, and front-end web development.</p>
-          <br>
-          <p><a href="https://www.linkedin.com/in/sloane-gartner-14b690156" target="_blank">Linkedin</a></p>
-	</div>
-	</section>
+<div id=btn>
+<button class="btn btn-primary"><a href="photos.html" target="_blank">View Gallery</a></button>
+</div>
+</section>
 </div>
 
-<!-- Dropdown Menu -->
-<!-- Toggle -->
+   <!-- RESUME -->
+    <div id="resume" class="section-padding divider">
+        <div class="container">
+            <div class="row">
+                <div class="col-12" data-aos="fade-up">
+                    <div class="intro-section text-center mb-5">
+                        <h1>My Resume</h1>
+                        <p class="mx-auto">I've been in the design field for over 8 years. I've gained experience in video production, Adobe Premiere, graphic design, photography, Adobe Creative Suite, visual design, UX/UI, and user research.   
+                        <a href="https://sloanegartner.github.io/professional-resume/resume.html" target="_blank" class="d-block mt-2">Github Resume</a></p>
+                    </div>
+                </div>
+            </div>
 
-<script>
-function myFunction() {
-  document.getElementById("myDropdown").classList.toggle("show");
-}
+            <div class="row gx-0 gy-4 p-5 border-hover rounded-5 shadow" data-aos="fade-up" data-aos-delay="200">
+                <div class="col-md-3">
+                    <img src="images/logo.png" alt="">
+                </div>
+                <div class="col-md-3">
+                    <h6>WEB DESIGNER & PHOTOGRAPHER</h6>
+                    <h3>FREELANCE // Arlington VA</h3>
+                    <h3>2018 - PRESENT</h3>
+                </div>
+                <div class="col-md-6">
+                    <p class="mb-0">
+                    I have with clients on their professional websites. I have planned, created and coded their sites and web pages.
+                    <br>
+                    I create designs, logos and layouts of the websites.
+                    <br>
+                    I make the sites SEO-friendly and work within the metadata and meta-descriptions.
+                    <br>
+                    I teach photography one-on-one (techniques, compositions, equipment, editing and social posting).
+                    <br>
+                  I photograph parties, formals and other social events</p>
+                </div>
+            </div>
 
-window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
-}
-</script>
+            <div class="row mt-4 gx-0 gy-4 p-5 border-hover rounded-5 shadow" data-aos="fade-up" data-aos-delay="200">
+                <div class="col-md-3">
+                    <img src="images/usn.png" alt="">
+                </div>
+                <div class="col-md-3">
+                    <h6>RESEARCH ANALYST</h6>
+                    <h3>US NEWS & WORLD REPORT // Georgetown DC</h3>
+                    <h3>2021 - PRESENT</h3>
+                </div>
+                <div class="col-md-6">
+                    <p class="mb-0">
+                    Working within 360 Reviews, I perform SEO research and analyze and collect data on products for upcoming ratings.
+                    <br>
+                    I conduct user research to uncover what products the users are more likely to purchase.
+                    <br>
+                    I aggregate data to help summarize data from different, disparate and multiple sources.
+                    <br>
+                  I create and update multiple meta-analysis for various different research projects.</p>
+                </div>
+            </div>
+
+            <div class="row mt-4 gx-0 gy-4 p-5 border-hover rounded-5 shadow" data-aos="fade-up" data-aos-delay="200">
+                <div class="col-md-3">
+                    <img src="images/tad.png" alt="">
+                </div>
+                <div class="col-md-3">
+                    <h6>LEAD PHOTOGRAPHER</h6>
+                    <h3>TECHNOLOGY & DESIGN // Harrisonburg VA</h3>
+                    <h3>2017 - 2021</h3>
+                </div>
+                <div class="col-md-6">
+                    <p class="mb-0">
+                    I was lead photographer on the creative projects team for JMUs media shop. I set and lead staff meetings, interacted with clients and provided visuals for the Universities websites.
+                    <br>
+                    As a member of the team, I shot, selected, edited and retouched photos for brochures, magazines, posters and social media that promoted the universities activities to the campus community and alumni.
+                  <br>
+                We used rapid prototyping and agile methods to provide quick turnarounds that were always customized to the clients needs, both print and social.</p>
+                </div>
+            </div>
+
+            <div class="row mt-4 gx-0 gy-4 p-5 border-hover rounded-5 shadow" data-aos="fade-up" data-aos-delay="200">
+                <div class="col-md-3">
+                    <img src="images/beatha2.png" alt="">
+                </div>
+                <div class="col-md-3">
+                    <h6>WEB DESIGNER</h6>
+                    <h3>FOROIGE // Galway Ireland</h3>
+                    <h3>2019</h3>
+                </div>
+                <div class="col-md-6">
+                    <p class="mb-0">
+                    I was the member of the web team for JMU - Foroige international educational partnership.
+                    <br>
+                    I was responsible for the front-end development of a public service website to increase community awareness about reducing food waste in Galway.
+                    <br>
+                  I determined the layout, theme and selected and edited multimedia content (video/photo/text).
+                <br>
+              I launched the final site at 2019.jmuireland.com</p>
+                </div>
+            </div>
+      
+      <div class="row mt-4 gx-0 gy-4 p-5 border-hover rounded-5 shadow" data-aos="fade-up" data-aos-delay="200">
+                <div class="col-md-3">
+                    <img src="images/aim.png" alt="">
+                </div>
+                <div class="col-md-3">
+                    <h6>Documentary Filmmaker</h6>
+                    <h3>Arlington Independent Media // Arlington VA</h3>
+                    <h3>2015 - 2016</h3>
+                </div>
+                <div class="col-md-6">
+                    <p class="mb-0">
+                    Highly selective paid television production apprenticeship
+                    <br>
+                    Created teen-produced documentaries about the Arlington community
+                    <br>
+                  Wrote scripts, storyboarded, conducted interviews, researched material, edited the day's shooting, mixed sound, and handled production equipment</p>
+                </div>
+            </div>
+    
+    <!-- RESUME:SKILLS -->        
+        </div>
+        <div class="section-padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12" data-aos="fade-up">
+                        <div class="intro-section text-center mb-5">
+                            <h1>My Skills</h1>
+                            <p class="mx-auto">I have a variety of design skills. I look for ways to improve the skills I have and try and find new ones.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row g-md-5 g-4">
+                    <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+                        <div class="row gy-4">
+                            <div class="col-12">
+                                <div>
+                                    <h5 class="small">HTML/CSS</h5>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" aria-label="Example with label" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div>
+                                    <h5 class="small">UX/UI</h5>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" aria-label="Example with label" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div>
+                                    <h5 class="small">FIGMA</h5>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" aria-label="Example with label" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">85%</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div>
+                                    <h5 class="small">ADOBE CREATIVE CLOUD</h5>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" aria-label="Example with label" style="width: 95%;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">95%</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div>
+                                    <h5 class="small">SEO</h5>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" aria-label="Example with label" style="width: 78%;" aria-valuenow="78" aria-valuemin="0" aria-valuemax="100">78%</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div>
+                                    <h5 class="small">BOOTSTRAP</h5>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" aria-label="Example with label" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+                        <div class="row gy-4">
+                            <div class="col-12">
+                                <div>
+                                    <h5 class="small">GITHUB</h5>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" aria-label="Example with label" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div>
+                                    <h5 class="small">PHOTOGRAPHY</h5>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" aria-label="Example with label" style="width: 98%;" aria-valuenow="98" aria-valuemin="0" aria-valuemax="100">98%</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div>
+                                    <h5 class="small">WIREFRAMING & PROTOTYPING</h5>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" aria-label="Example with label" style="width: 87%;" aria-valuenow="87" aria-valuemin="0" aria-valuemax="100">87%</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div>
+                                    <h5 class="small">VISUAL DESIGN</h5>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" aria-label="Example with label" style="width: 87%;" aria-valuenow="87" aria-valuemin="0" aria-valuemax="100">87%</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div>
+                                    <h5 class="small">ADOBE XD</h5>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" aria-label="Example with label" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div>
+                                    <h5 class="small">SPLINE</h5>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" aria-label="Example with label" style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60%</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- CONTACT -->
+<section id="contact" class="overlay text-white text-center" data-jarallax data-speed="0.5" class="jarallax">
+  <div class="container">
+    <div class="row">
+            <div class="col-lg-12 col-sm-6">
+            <div class="counter">
+            <h1>Lets Chat!</h1>
+            <h4>My Socials</h4>
+            <img src="images/profilePic.png" alt="">
+            <div class="divider"></div>
+
+            <a href="mailto:sloane.gartner3@gmail.com" target="_blank">sloane.gartner3@gmail.com</a>
+            <br>
+
+            <a href="https://www.instagram.com/vsg.photography/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            
+            <span class=contactIcons><a href="https://www.linkedin.com/in/sloane-gartner-14b690156" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+            
+            <a href="https://sloanegartner.github.io/professional-resume/resume.html" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+
+            <a href="https://flickr.com/search/?user_id=19363422%40N02&view_all=1&text=Sloane%20Gartner" target="_blank"><i class="fa fa-flickr" aria-hidden="true"></i></a>
+</div>
+</div>
+</div>
+</div>
+</section>
 
 
-<!-- Footer -->
-<footer>
-    <h6>Designed and Created by Sloane Gartner</h6>
+<!-- FOOTER -->
+  <footer class="text-center py-5 bg-dark text-white">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div>
+            <a href="#hero">Home</a>
+            <a href="#about">About</a>
+            <a href="#designs">Designs</a>
+            <a href="#photography">Photography</a>
+            <a href="#resume">Resume</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <p class="mb-0 py-3">Designed by Sloane Gartner</p>
+</div>
+</div>
+</div>
 </footer>
 
-</body>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jarallax/1.12.7/jarallax.min.js" integrity="sha512-JpiSiPEgPmeTAnXyH375a9UxAsjoiyO+lpsayQd7Pcl2+tYf4y1beIF25yDMvmAV7dbZUPqh084iT3D6IQOoHg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="js/main.js"></script>
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="js/app.js"></script>
+
+  </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
