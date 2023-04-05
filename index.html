@@ -594,14 +594,14 @@
 <section id="contact" class="overlay text-white text-center" data-jarallax data-speed="0.5" class="jarallax">
   <div class="container">
     <div class="row">
-            <div class="col-lg-12 col-sm-6">
+            <div class="col-lg-12 col-sm-12">
             <div class="counter">
             <h1>Lets Chat!</h1>
             <h4>My Socials</h4>
             <img src="images/profilePic.png" alt="">
             <div class="divider"></div>
 
-            <a href="mailto:sloane.gartner3@gmail.com" target="_blank">sloane.gartner3@gmail.com</a>
+            <a href="mailto:sloane.gartner3@gmail.com" target="_blank" style="color: white;">sloane.gartner3@gmail.com</a>
             <br>
 
             <a href="https://www.instagram.com/vsg.photography/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
@@ -653,6 +653,12 @@
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="js/app.js"></script>
+  
+    <script> 
+    $('.navbar-nav>li>a').on('click', function(){
+    $('.navbar-collapse').collapse('hide');
+    });
+    </script>
 
   </body>
 </html>
