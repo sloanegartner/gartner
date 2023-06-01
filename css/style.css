@@ -120,6 +120,17 @@ h6
     color: #dbdbdb;
 }
 
+#hero a
+{
+    font-size: 30px;
+    color: #dbdbdb;
+}
+
+#hero a:hover
+{
+    color: #817fa8;
+}
+
 #hero p
 {
     font-size: 25px;
